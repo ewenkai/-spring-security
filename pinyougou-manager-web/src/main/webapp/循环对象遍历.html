@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="plugins/angularjs/angular.min.js"></script>
+    <script>
+        //建立模块
+        var app=angular.module("app",[]);
+        app.controller("list",function ($scope,$http) {
+            $scope.findAll=function () {
+                $http.get('demo.json').success(function (res) {
+                    $scope.list=res;
+                });
+                
+            }
+
+
+        });
+    </script>
+</head>
+<body ng-app="app" ng-controller="list" ng-init="findAll()">
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>数学</th>
+            <th>语文</th>
+        </tr>
+        <tr ng-repeat="entity in list">
+            <td>{{entity.name}}</td>
+            <td>{{entity.shuxue}}</td>
+            <td>{{entity.shuxue}}</td>
+        </tr>
+    </table>
+
+</body>
+</html>
