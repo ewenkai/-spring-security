@@ -1,9 +1,0 @@
-com\pyg\sellergoods\service\Impl\BrandServiceImpl.class
-com\pyg\sellergoods\service\Impl\SpecificationOptionServiceImpl.class
-com\pyg\sellergoods\service\Impl\GoodsDescServiceImpl.class
-com\pyg\sellergoods\service\Impl\TypeTemplateServiceImpl.class
-com\pyg\sellergoods\service\Impl\SellerServiceImpl.class
-com\pyg\sellergoods\service\Impl\SpecificationServiceImpl.class
-com\pyg\sellergoods\service\Impl\ItemServiceImpl.class
-com\pyg\sellergoods\service\Impl\GoodsServiceImpl.class
-com\pyg\sellergoods\service\Impl\ItemCatServiceImpl.class
